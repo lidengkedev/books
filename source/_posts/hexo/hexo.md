@@ -125,7 +125,24 @@ local_search:
 
 ## 部署脚本
 
-在根目录下新建一个 deploy.sh 的脚本文件，内容如下：
+在开始之前，您必须先在 _config.yml 中修改参数，一个正确的部署配置中至少要有 type 参数，例如：
+
+```yml
+deploy:
+  type: git
+```
+
+您可同时使用多个 deployer，Hexo 会依照顺序执行每个 deployer。
+
+```yml
+deploy:
+- type: git
+  repo:
+- type: heroku
+  repo:
+```
+
+在根目录下新建一个 `deploy.sh` 的脚本文件，内容如下：
 
 ```bash
 # 清空缓存文件
@@ -144,3 +161,33 @@ $ sh deploy.sh
 
 就可以完成博客的更新了，非常简单。
 
+> 缩进
+YAML依靠缩进来确定元素间的从属关系。因此，请确保每个deployer的缩进长度相同，并且使用空格缩进。
+
+### 第三方插件部署
+
+安装 hexo-deployer-git
+
+```bash
+$ npm install hexo-deployer-git --save
+```
+
+修改配置
+
+```yml
+deploy:
+  type: git
+  repo: <repository url> #https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io
+  branch: [branch]
+  message: [message]
+```
+|参数|	描述|	默认|
+|---|---|---|
+|`repo`|	库（Repository）地址|	|
+|`branch`|	分支名称|	`gh-pages (GitHub)`、`coding-pages (Coding.net)`、`master (others)`|
+|`message`|	自定义提交信息|	`Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }})`|
+|`token`|	`Optional token value to authenticate with the repo. Prefix with $ to read token from environment variable`| | |
+
+生成站点文件并推送至远程库。执行 `hexo clean && hexo deploy`。
+
+登入 `Github/BitBucket/Gitlab`，请在库设置（`Repository Settings`）中将默认分支设置为`_config.yml`配置中的分支名称。稍等片刻，您的站点就会显示在您的`Github Pages`中。

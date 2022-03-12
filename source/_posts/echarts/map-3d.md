@@ -1,10 +1,11 @@
 ---
 title: Echarts 3D 地图
-date: 2022-03-06 22:25:59
+date: 2022-03-10 22:25:59
 tags:
+  - echarts
 categories:
+  - echarts
 ---
-@[toc]
 
 # 利用echart和echart-gl绘制江苏省的地图之二
 

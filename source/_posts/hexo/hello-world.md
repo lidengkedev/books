@@ -1,5 +1,5 @@
 ---
-title: Hello World
+title: Hexo 快速开始
 date: 2022-03-06 22:25:59
 tags:
 categories: hexo
