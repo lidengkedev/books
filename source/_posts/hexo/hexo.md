@@ -1,21 +1,20 @@
 ---
-title: hexo
+title: Hexo
 date: 2022-03-06 22:24:59
 tags:
-- 标签1
-- 标签2
-- 标签3
+    - hexo
 categories:
-- 分类1
-- 分类2
+    - hexo
 ---
 
 ## 文章
 增加其他的文章只需要调用 Hexo 提供的命令即可:
+
 ```bash
 $ hexo new hello-world
 ```
-创建的文章会出现在 source/_posts 文件夹下，是 MarkDown 格式。
+
+创建的文章会出现在 `source/_posts` 文件夹下，是 `MarkDown` 格式。
 
 在文章开头通过如下格式添加必要信息：
 ```
@@ -23,12 +22,12 @@ $ hexo new hello-world
 title: hexo
 date: 2022-03-06 22:24:59
 tags:
-- 标签1
-- 标签2
-- 标签3
+    - 标签1
+    - 标签2
+    - 标签3
 categories:
-- 分类1
-- 分类2
+    - 分类1
+    - 分类2
 ---
 ```
 开头下方撰写正文，MarkDown 格式书写即可。
@@ -42,7 +41,7 @@ $ hexo new page tags
 ```
 执行这个命令之后会自动帮我们生成一个 source/tags/index.md 文件，内容就只有这样子的：
 
-```
+```yml
 ---
 title: tags
 date: 2022-03-06 22:24:59
@@ -50,35 +49,39 @@ date: 2022-03-06 22:24:59
 ```
 我们可以自行添加一个 type 字段来指定页面的类型：
 
-```
+```yml
 type: tags
-comments:false 
+comments: false 
 ```
 然后再在主题的 _config.yml 文件将这个页面的链接添加到主菜单里面，修改 menu 字段如下：
 
-```
+```yml
 menu:
     home: / || home
     tags: /tags/ || tags
     archives: /archives/ || archives
 ```
+
 分类功能和标签类似，一个文章可以对应某个分类，如果要增加分类页面可以使用如下命令创建：
 
 ```bash
 $ hexo new page categories
 ```
+
 然后同样地，会生成一个 source/categories/index.md 文件。
 我们可以自行添加一个 type 字段来指定页面的类型：
 
-```
+```yml
 type: categories
 comments: false
 ```
 然后再在主题的 _config.yml 文件将这个页面的链接添加到主菜单里面，修改 menu 字段如下：
-```
+
+```yml
 menu:
     categories: /categories/ || fa fa-th
 ```
+
 ## 搜索页
 很多情况下我们需要搜索全站的内容，所以一个搜索功能的支持也是很有必要的。
 如果要添加搜索的支持，需要先安装一个插件，叫做 hexo-generator-searchdb，命令如下：
@@ -86,33 +89,58 @@ menu:
 ```bash
 $ npm install hexo-generator-searchdb --save
 ```
+
 然后在项目的 _config.yml 里面添加搜索设置如下：
 
-```
+```yml
 search:
   path: search.xml
   field: post
   format: html
   limit: 10000
 ```
-然后在主题的 _config.yml 里面修改如下：
-```
+
+然后在主题的 `_config.yml` 里面修改如下：
+
+```yml
 local_search:
     enable: true
     top_n_per_article: 5
 ```
-部署脚本
+
+### 站内引用文章
+
+```
+{% post_link 文章文件名（不要后缀） 文章标题（可选） %}
+{% post_link hello-world %}
+{% post_link hello-world hexo介绍 %}
+```
+
+
+
+
+
+
+
+
+## 部署脚本
+
 在根目录下新建一个 deploy.sh 的脚本文件，内容如下：
+
 ```bash
+# 清空缓存文件
 hexo clean
-
+# 生成静态文件
 hexo generate
-
+# 部署静态资源文件
 hexo deploy
 ```
+
 这样我们在部署发布的时候只需要执行：
+
 ```bash
 $ sh deploy.sh
 ```
+
 就可以完成博客的更新了，非常简单。
 

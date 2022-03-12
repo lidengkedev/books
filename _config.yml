@@ -6,7 +6,7 @@
 title: 个人博客
 subtitle: 一个专注技术的组织
 description: 涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。
-keywords:
+keywords: JavaScript,HTML,CSS,Vue,React,NodeJs,Nginx,Linux,MySQL,Vite,Webpack,Echarts,Three
 author: 登峰人
 # language: en
 language: zh-CN # en
@@ -14,6 +14,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+# url: https://lidengkedev.github.io/books
 url: http://example.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
