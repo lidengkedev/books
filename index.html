@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/books/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/books/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/books/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/books/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/books/css/main.css">
+
+
+<link rel="stylesheet" href="/books/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"lidengkedev.github.io","root":"/books/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":5,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="个人博客">
+<meta property="og:url" content="https://lidengkedev.github.io/books/index.html">
+<meta property="og:site_name" content="个人博客">
+<meta property="og:description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="登峰人">
+<meta property="article:tag" content="JavaScript,HTML,CSS,Vue,React,NodeJs,Nginx,Linux,MySQL,Vite,Webpack,Echarts,Three">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://lidengkedev.github.io/books/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>个人博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/books/atom.xml" title="个人博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/books/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">个人博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个专注技术的组织</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/books/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/books/tags/" rel="section"><i class="tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/books/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/books/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+  <a href="https://github.com/lidengkedev/books.git" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/babel/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/babel/" class="post-title-link" itemprop="url">babel</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:23:26 / 修改时间：19:34:21" itemprop="dateCreated datePublished" datetime="2022-07-01T19:23:26+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="babel"><a href="#babel" class="headerlink" title="babel"></a>babel</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://babeljs.io/repl">在线ES6转ES5</a></li>
+<li><a target="_blank" rel="noopener" href="https://es6console.com/">在线Babel转译</a></li>
+</ul>
+<h2 id="es6-转-es5"><a href="#es6-转-es5" class="headerlink" title="es6 转 es5"></a>es6 转 es5</h2><blockquote>
+<p>const</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6</span></span><br><span class="line"><span class="keyword">const</span> a = <span class="number">12</span>;</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">const</span> a = <span class="number">23</span>;</span><br><span class="line">  &#123;</span><br><span class="line">  	<span class="keyword">const</span> a = <span class="string">&#x27;string&#x27;</span>;</span><br><span class="line">    &#123;</span><br><span class="line">    	<span class="keyword">const</span> a = &#123;&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// babel 转 es5</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">12</span>;</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">var</span> _a = <span class="number">23</span>;</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">var</span> _a2 = <span class="string">&#x27;string&#x27;</span>;</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">var</span> _a3 = &#123;&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>let</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6</span></span><br><span class="line"><span class="keyword">let</span> a = <span class="number">23</span>;</span><br><span class="line">&#123;</span><br><span class="line">  	<span class="keyword">let</span> a = <span class="number">12</span>;</span><br><span class="line">  &#123;</span><br><span class="line">  	<span class="keyword">let</span> a = <span class="number">23</span>;</span><br><span class="line">    &#123;</span><br><span class="line">    	<span class="keyword">let</span> a = <span class="number">34</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// babel 转换 es5</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">23</span>;</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">var</span> _a = <span class="number">12</span>;</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">var</span> _a2 = <span class="number">23</span>;</span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">var</span> _a3 = <span class="number">34</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>箭头函数</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6</span></span><br><span class="line">() =&gt; &#123;</span><br><span class="line">	<span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&#x27;string&#x27;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// babel 转 es5</span></span><br><span class="line"><span class="keyword">var</span> _this = <span class="keyword">void</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  _this.<span class="property">name</span> = <span class="string">&#x27;string&#x27;</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    	<span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;child2&quot;</span>;</span><br><span class="line">      <span class="function">() =&gt;</span> &#123;</span><br><span class="line">      	<span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;child3&quot;</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">function</span> <span class="title function_">fn</span> () &#123;</span><br><span class="line">    	<span class="function">() =&gt;</span> &#123;</span><br><span class="line">        	<span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;parent&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// babel 转 es5</span></span><br><span class="line"><span class="keyword">var</span> _this = <span class="keyword">void</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">var</span> fn = <span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> _this2 = <span class="variable language_">this</span>;</span><br><span class="line"></span><br><span class="line">    (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      _this2.<span class="property">name</span> = <span class="string">&quot;parent&quot;</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    _this.<span class="property">name</span> = <span class="string">&quot;child2&quot;</span>;</span><br><span class="line"></span><br><span class="line">    (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      _this.<span class="property">name</span> = <span class="string">&quot;child3&quot;</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// es6</span></span><br><span class="line">() =&gt; &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;child2&quot;</span>;</span><br><span class="line">  <span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;child3&quot;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fn</span> () &#123;</span><br><span class="line">    <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;parent&quot;</span>;</span><br><span class="line">      <span class="function">() =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">name</span> = <span class="string">&quot;child&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// babel 转 es5</span></span><br><span class="line"><span class="keyword">var</span> _this = <span class="keyword">void</span> <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">  _this.<span class="property">name</span> = <span class="string">&quot;child2&quot;</span>;</span><br><span class="line"></span><br><span class="line">  (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    _this.<span class="property">name</span> = <span class="string">&quot;child3&quot;</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">fn</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> _this2 = <span class="variable language_">this</span>;</span><br><span class="line"></span><br><span class="line">  (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    _this2.<span class="property">name</span> = <span class="string">&quot;parent&quot;</span>;</span><br><span class="line"></span><br><span class="line">    (<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      _this2.<span class="property">name</span> = <span class="string">&quot;child&quot;</span>;</span><br><span class="line">    &#125;);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>符号转换</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6</span></span><br><span class="line"><span class="keyword">const</span> text = <span class="string">&quot;这是一句话&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> text2 = <span class="string">`这是另一句话<span class="subst">$&#123;text&#125;</span>`</span>;</span><br><span class="line"><span class="string">`&lt;div&gt;<span class="subst">$&#123;text2&#125;</span>&lt;/div&gt;`</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// babel 转 es5</span></span><br><span class="line"><span class="keyword">var</span> text = <span class="string">&quot;这是一句话&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> text2 = <span class="string">&quot;\u8FD9\u662F\u53E6\u4E00\u53E5\u8BDD&quot;</span>.<span class="title function_">concat</span>(text);</span><br><span class="line"><span class="string">&quot;&lt;div&gt;&quot;</span>.<span class="title function_">concat</span>(text2, <span class="string">&quot;&lt;/div&gt;&quot;</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>解构赋值</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6</span></span><br><span class="line"><span class="keyword">const</span> [a,b,c] = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>];</span><br><span class="line"><span class="keyword">const</span> new_arr = [...arr, <span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// babel 转 es5</span></span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>,</span><br><span class="line">    b = <span class="number">2</span>,</span><br><span class="line">    c = <span class="number">3</span>;</span><br><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="keyword">var</span> new_arr = [].<span class="title function_">concat</span>(arr, [<span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>]);</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/html/index/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/html/index/" class="post-title-link" itemprop="url">HTML</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:22:33 / 修改时间：19:36:35" itemprop="dateCreated datePublished" datetime="2022-07-01T19:22:33+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/html/" itemprop="url" rel="index"><span itemprop="name">html</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h1><h2 id="Web标准和W3C"><a href="#Web标准和W3C" class="headerlink" title="Web标准和W3C"></a>Web标准和W3C</h2><blockquote>
+<p> 标签闭合，标签小写，不乱嵌套，提高搜索机器人搜索几率，</p>
+<p>使用外连接css和js脚本，结构行为表现的分离，</p>
+</blockquote>
+<ul>
+<li>文件下载与页面速度更快，</li>
+<li>内容能被更多的用户访问，</li>
+<li>内容能被更广泛的设备所访问，</li>
+<li>更少的代码和组件，</li>
+<li>容易维护，</li>
+<li>改版方便，</li>
+<li>不需要变动页面内容，</li>
+<li>提供打印版本而不需要复制内容，</li>
+<li>提高网站易用性</li>
+</ul>
+<h3 id="Xhtml和html有什么区别？"><a href="#Xhtml和html有什么区别？" class="headerlink" title="Xhtml和html有什么区别？"></a>Xhtml和html有什么区别？</h3><ul>
+<li>HTML是一种基于web网页设计语言，</li>
+<li>XHTML是一个基于xml的置标语言</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/html/html5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/html/html5/" class="post-title-link" itemprop="url">HTML5</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:21:17 / 修改时间：19:36:27" itemprop="dateCreated datePublished" datetime="2022-07-01T19:21:17+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/html/" itemprop="url" rel="index"><span itemprop="name">html</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h1><h2 id="HTML5新增加的API"><a href="#HTML5新增加的API" class="headerlink" title="HTML5新增加的API"></a>HTML5新增加的API</h2><ol>
+<li>用于即时2D绘图的Canvas标签</li>
+<li>定时媒体回放</li>
+<li>离线数据库存储</li>
+<li>文档编辑</li>
+<li>拖拽控制</li>
+<li>浏览历史管理<br>…<h2 id="HTML5中新增的标签"><a href="#HTML5中新增的标签" class="headerlink" title="HTML5中新增的标签"></a>HTML5中新增的标签</h2></li>
+<li>canvas</li>
+<li>video,audio</li>
+<li>artcle,footer,header,nav,section</li>
+<li>calender,date,time,email,url,search</li>
+<li>datalist(类似于select)</li>
+</ol>
+<h2 id="HTML5中被移除的标签"><a href="#HTML5中被移除的标签" class="headerlink" title="HTML5中被移除的标签"></a>HTML5中被移除的标签</h2><ol>
+<li>u,font,center,strike</li>
+</ol>
+<h2 id="HTML5的两大特点"><a href="#HTML5的两大特点" class="headerlink" title="HTML5的两大特点"></a>HTML5的两大特点</h2><ol>
+<li>强化了Web网页的表现性能，增加了可描绘二维图形以及视频和音频的标签。</li>
+<li>添加了本地数据库等web应用的功能。</li>
+</ol>
+<h2 id="video视频"><a href="#video视频" class="headerlink" title="video视频"></a>video视频</h2><p>video目前支持三种视频格式：Ogg,MPEG4,WebM</p>
+<ul>
+<li>Ogg = 带有Theora视频编码和Vorbis视频编码的Ogg文件</li>
+<li>MPEG4 = 带有H.264视频编码和Vorbis音频编码的MPEG4文件</li>
+<li>WebM = 带有VP8视频和Vorbis音频编码的WebM文件</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">&quot;320&quot;</span> <span class="attr">height</span>=<span class="string">&quot;240&quot;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;/i/movie.ogg&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/ogg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;/i/movie.mp4&quot;</span> <span class="attr">type</span>=<span class="string">&quot;video/mp4&quot;</span>&gt;</span></span><br><span class="line">Your brower does not stupport the video tag.</span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="video属性相关的"><a href="#video属性相关的" class="headerlink" title="video属性相关的"></a>video属性相关的</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autoplay</td>
+<td>autoplay</td>
+<td>视频就绪后立即播放</td>
+</tr>
+<tr>
+<td>controls</td>
+<td>controls</td>
+<td>显示控件，比如播放按钮</td>
+</tr>
+<tr>
+<td>height</td>
+<td>pixels像素值</td>
+<td>视频播放器的高度</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>loop</td>
+<td>循环播放</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>preload</td>
+<td>视频在页面加载时进行加载并预备播放，如果使用autoplay，则此属性无效</td>
+</tr>
+<tr>
+<td>src</td>
+<td>url</td>
+<td>播放视频是地址</td>
+</tr>
+<tr>
+<td>width</td>
+<td>pixels像素值</td>
+<td>视频播放器的宽度</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="audio音频"><a href="#audio音频" class="headerlink" title="audio音频"></a>audio音频</h2><p>audio目前支持三种音频格式: Ogg Vorbis,MP3,Wav</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">src</span>=<span class="string">&quot;/i/song.ogg&quot;</span> <span class="attr">controls</span>=<span class="string">&quot;controls&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;song.ogg&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/ogg&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">source</span> <span class="attr">src</span>=<span class="string">&quot;song.mp3&quot;</span> <span class="attr">type</span>=<span class="string">&quot;audio/mpeg&quot;</span>&gt;</span></span><br><span class="line">Your browser does not support the audio tag.</span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="audio属性相关"><a href="#audio属性相关" class="headerlink" title="audio属性相关"></a>audio属性相关</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>autoplay</td>
+<td>autoplay</td>
+<td>音频就绪后立即播放</td>
+</tr>
+<tr>
+<td>controls</td>
+<td>controls</td>
+<td>显示控件，比如播放按钮</td>
+</tr>
+<tr>
+<td>loop</td>
+<td>loop</td>
+<td>循环播放</td>
+</tr>
+<tr>
+<td>preload</td>
+<td>preload</td>
+<td>音频在页面加载时进行加载，并预备播放，如果使用“qutoplay”，则此属性无效</td>
+</tr>
+<tr>
+<td>src</td>
+<td>url</td>
+<td>要播放的音频的URL</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/html/character/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/html/character/" class="post-title-link" itemprop="url">字符集</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:20:05 / 修改时间：19:36:17" itemprop="dateCreated datePublished" datetime="2022-07-01T19:20:05+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/html/" itemprop="url" rel="index"><span itemprop="name">html</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h1><table>
+    <thead>
+        <tr>
+            <th style="width: 50px">字符</th>
+            <th style="width: 150px">简称</th>
+            <th>描述</th>
+        <tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&nbsp</td>
+            <td>不换行空格符</td>
+            <td>它叫不换行空格，全称No-Break Space，它是最常见和我们使用最多的空格，大多数的人可能只接触了 ，它是按下space键产生的空格。在HTML中，如果你用空格键产生此空格，空格是不会累加的（只算1个）。要使用html实体表示才可累加，该空格占据宽度受字体影响明显而强烈。</td>
+        </tr>
+        <tr>
+            <td>&ensp</td>
+            <td>半角空格符</td>
+            <td>它叫“半角空格”，全称是En Space，en是字体排印学的计量单位，为em宽度的一半。根据定义，它等同于字体度的一半（如16px字体中就是8px）。名义上是小写字母n的宽度。此空格传承空格家族一贯的特性：透明的，此空格有个相当稳健的特性，就是其占据的宽度正好是1/2个中文宽度，而且基本上不受字体影响。</td>
+        </tr>
+        <tr>
+            <td>&emsp</td>
+            <td>全角空格符</td>
+            <td>它叫“全角空格”，全称是Em Space，em是字体排印学的计量单位，相当于当前指定的点数。例如，1 em在16px的字体中就是16px。此空格也传承空格家族一贯的特性：透明的，此空格也有个相当稳健的特性，就是其占据的宽度正好是1个中文宽度，而且基本上不受字体影响。</td>
+        </tr>
+        <tr>
+            <td>&thinsp</td>
+            <td>窄空格</td>
+            <td>它叫窄空格，全称是Thin Space。我们不妨称之为“瘦弱空格”，就是该空格长得比较瘦弱，身体单薄，占据的宽度比较小。它是em之六分之一宽。</td>
+        </tr>
+        <tr>
+            <td>&zwnj</td>
+            <td>零宽度不连字</td>
+            <td>它叫零宽不连字，全称是Zero Width Non Joiner，简称“ZWNJ”，是一个不打印字符，放在电子文本的两个字符之间，抑制本来会发生的连字，而是以这两个字符原本的字形来绘制。Unicode中的零宽不连字字符映射为“”（zero width non-joiner，U+200C），HTML字符值引用为</td>
+        </tr>
+        <tr>
+            <td>&zwj</td>
+            <td>零宽度连字</td>
+            <td>它叫零宽连字，全称是Zero Width Joiner，简称“ZWJ”，是一个不打印字符，放在某些需要复杂排版语言（如阿拉伯语、印地语）的两个字符之间，使得这两个本不会发生连字的字符产生了连字效果。零宽连字符的Unicode码位是U+200D (HTML: ‍ ‍）。</td>
+        </tr>
+        <tr>
+            <td>&gt</td>
+            <td>大于('>')</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&lt</td>
+            <td>小于('<')</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&times</td>
+            <td>('X')</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/html/canvas/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/html/canvas/" class="post-title-link" itemprop="url">canvas 画布</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:19:03 / 修改时间：19:36:09" itemprop="dateCreated datePublished" datetime="2022-07-01T19:19:03+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/html/" itemprop="url" rel="index"><span itemprop="name">html</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="canvas画布"><a href="#canvas画布" class="headerlink" title="canvas画布"></a>canvas画布</h1><p>canvas元素用于在网页上绘制图形</p>
+<p>HTML5的canvas元素使用javascript在网页上绘制图像，画布时一个矩形区域，可以控制其每一个像素。</p>
+<p>canvas拥有多种绘制路径、矩形、圆形、字符以及添加图像的方法。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">&quot;myCanvas&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span>&gt;</span></span><br><span class="line">Your browser does not support the canvas element.</span><br><span class="line"><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>绘制矩形</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取canvas元素</span></span><br><span class="line"><span class="keyword">var</span> c = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;myCanvas&#x27;</span>);</span><br><span class="line"><span class="comment">// 创建context对象</span></span><br><span class="line"><span class="keyword">var</span> cxt = c.<span class="title function_">getContext</span>(<span class="string">&quot;2d&quot;</span>);</span><br><span class="line"><span class="comment">// 设置填充颜色为红色</span></span><br><span class="line">cxt.<span class="property">fillStyle</span> = <span class="string">&quot;#FF0000&quot;</span>;</span><br><span class="line"><span class="comment">// 绘画一个矩形</span></span><br><span class="line">cxt.<span class="title function_">dillRect</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">150</span>,<span class="number">75</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>绘制线段</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;myCanvas&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> cxt = c.<span class="title function_">getContext</span>(<span class="string">&quot;2d&quot;</span>);</span><br><span class="line">cxt.<span class="title function_">moveTo</span>(<span class="number">10</span>,<span class="number">10</span>);</span><br><span class="line">cxt.<span class="title function_">lineTo</span>(<span class="number">150</span>,<span class="number">50</span>);</span><br><span class="line">cxt.<span class="title function_">lineTo</span>(<span class="number">10</span>,<span class="number">50</span>);</span><br><span class="line">cxt.<span class="title function_">stroke</span>();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>绘制圆</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myCanvas&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> cxt = c.<span class="title function_">getContext</span>(<span class="string">&quot;2d&quot;</span>);</span><br><span class="line">cxt.<span class="property">fillStyle</span> = <span class="string">&quot;#FFF0000&quot;</span>;</span><br><span class="line">cxt.<span class="title function_">beginPath</span>();</span><br><span class="line">cxt.<span class="title function_">arc</span>(<span class="number">70</span>,<span class="number">18</span>,<span class="number">15</span>,<span class="number">0</span>,<span class="title class_">Math</span>.<span class="property">PI</span>*<span class="number">2</span>,<span class="literal">true</span>);</span><br><span class="line">cxt.<span class="title function_">closePath</span>();</span><br><span class="line">cxt.<span class="title function_">fill</span>();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>横向渐变色（矩形）</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myCanvas&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> cxt = c.<span class="title function_">getContext</span>(<span class="string">&quot;2d&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> grd = cxt.<span class="title function_">createLinearGradient</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">175</span>,<span class="number">50</span>);</span><br><span class="line">grd.<span class="title function_">addColorStop</span>(<span class="number">0</span>, <span class="string">&quot;#FF0000&quot;</span>);</span><br><span class="line">grd.<span class="title function_">addColorStop</span>(<span class="number">1</span>, <span class="string">&quot;00FF00&quot;</span>);</span><br><span class="line">cxt.<span class="property">fillStyle</span> = grd;</span><br><span class="line">cxt.<span class="title function_">fillRect</span>();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>添加图片</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> c = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myCanvas&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> cxt = c.<span class="title function_">getContext</span>(<span class="string">&quot;2d&quot;</span>);</span><br><span class="line"><span class="keyword">var</span> img = <span class="keyword">new</span> <span class="title class_">Image</span>();</span><br><span class="line">img.<span class="property">src</span> = <span class="string">&quot;flower.png&quot;</span>;</span><br><span class="line">cxt.<span class="title function_">drawImage</span>(img, <span class="number">0</span>, <span class="number">0</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="常用方法和属性"><a href="#常用方法和属性" class="headerlink" title="常用方法和属性"></a>常用方法和属性</h4><pre><code>getContext(&#39;2d&#39;)
+moveTo(x,y)
+lineTo(x,y)
+beginPath()
+clip()
+fillText()
+fillStyle
+fill()
+lineWidth
+stroke()
+strokeStyle
+fillRect()
+font
+src()
+textAlign
+lineCap
+closePath
+strokeRect()
+</code></pre>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/js/window/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/js/window/" class="post-title-link" itemprop="url">Window</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:17:58 / 修改时间：19:35:59" itemprop="dateCreated datePublished" datetime="2022-07-01T19:17:58+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="window"><a href="#window" class="headerlink" title="window"></a>window</h1><blockquote>
+<p>open</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// url  新窗口请求地址</span></span><br><span class="line"><span class="comment">// name 新窗口名称</span></span><br><span class="line"><span class="comment">// params 新窗口样式</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="title function_">open</span>(url, name, params);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">window</span>.<span class="title function_">open</span>(<span class="string">&#x27;http://www.imooc.com&#x27;</span>,<span class="string">&#x27;_blank&#x27;</span>,<span class="string">&#x27;width=300, height=200, menubar=no, toolbar=no, status=no, scrollbars=yes&#x27;</span>)</span><br></pre></td></tr></table></figure>
+<table>
+    <thead>
+        <tr>
+            <th>窗口参数</th>
+            <th>参数类型</th>
+            <th>说明</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>top</td>
+            <td>Number</td>
+            <td>窗口顶部距离，像素值</td>
+        </tr>
+        <tr>
+            <td>left</td>
+            <td>Number</td>
+            <td>窗口左边距离，像素值</td>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td>Number</td>
+            <td>窗口宽度</td>
+        </tr>
+        <tr>
+            <td>height</td>
+            <td>Number</td>
+            <td>窗口高度</td>
+        </tr>
+        <tr>
+            <td>menubar</td>
+            <td>yes,no</td>
+            <td>窗口是否显示菜单</td>
+        </tr>
+        <tr>
+            <td>toolbar</td>
+            <td>yes,no</td>
+            <td>窗口是否显示工具栏</td>
+        </tr>
+        <tr>
+            <td>scrollbars</td>
+            <td>yes,no</td>
+            <td>窗口是否显示滚动条</td>
+        </tr>
+        <tr>
+            <td>status</td>
+            <td>yes,no</td>
+            <td>窗口是否显示当前状态</td>
+        </tr>
+    </tbody>
+</table>
+
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 关闭当前窗口</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="title function_">close</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// &lt;窗口对象&gt;.close();关闭指定窗口</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> mywin = <span class="variable language_">window</span>.<span class="title function_">open</span>(url, name, params);</span><br><span class="line">mywin.<span class="title function_">close</span>();</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>print 打印</p>
+</blockquote>
+<ul>
+<li>chrome中可以直接使用print() 调用打印窗口</li>
+<li>firefix中必须使用windiw.print()，但是效果和chrome调用print()后，执行ctrl+shift+P一样，如果使用print()，则返回undefined</li>
+<li>IE 中可以可以直接使用print(),返回undefined,但是效果和chrome调用print()后，执行ctrl+shift+P一样</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tmp = <span class="variable language_">window</span>.<span class="title function_">open</span>(<span class="string">&quot;about:blank&quot;</span>, <span class="string">&quot;&quot;</span>, <span class="string">&quot;fullscreen=1&quot;</span>);</span><br><span class="line"></span><br><span class="line">tmp.<span class="title function_">moveTo</span>(<span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line"></span><br><span class="line">tmp.<span class="title function_">resizeTo</span>(screen.<span class="property">width</span> + <span class="number">20</span>, screen.<span class="property">height</span>);</span><br><span class="line"></span><br><span class="line">tmp.<span class="title function_">focus</span>();</span><br><span class="line"></span><br><span class="line">tmp.<span class="property">location</span>.<span class="property">href</span> = <span class="string">&#x27;http://www.che168.com/pinggu/eva_&#x27;</span> + msgResult.<span class="property">message</span>[<span class="number">0</span>] + <span class="string">&#x27;.html&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> config_ = <span class="string">&quot;left=0,top=0,width=&quot;</span> + (<span class="variable language_">window</span>.<span class="property">screen</span>.<span class="property">Width</span>) + <span class="string">&quot;,height=&quot;</span> + (<span class="variable language_">window</span>.<span class="property">screen</span>.<span class="property">Height</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">window</span>.<span class="title function_">open</span>(<span class="string">&#x27;http://www.che168.com/pinggu/eva_&#x27;</span> + msgResult.<span class="property">message</span>[<span class="number">0</span>] + <span class="string">&#x27;.html&#x27;</span>, <span class="string">&quot;winHanle&quot;</span>, config_);</span><br><span class="line"></span><br><span class="line"><span class="comment">//模拟form提交打开新页面</span></span><br><span class="line"><span class="keyword">var</span> f = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&quot;form&quot;</span>);</span><br><span class="line"></span><br><span class="line">f.<span class="title function_">setAttribute</span>(<span class="string">&#x27;action&#x27;</span>, <span class="string">&#x27;http://www.che168.com/pinggu/eva_&#x27;</span> + msgResult.<span class="property">message</span>[<span class="number">0</span>] + <span class="string">&#x27;.html&#x27;</span>);</span><br><span class="line"></span><br><span class="line">f.<span class="property">target</span> = <span class="string">&#x27;_blank&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(f);</span><br><span class="line"></span><br><span class="line">f.<span class="title function_">submit</span>();</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">window</span>.<span class="title function_">open</span>(<span class="string">&#x27;about:blank&#x27;</span>,<span class="string">&#x27;&#x27;</span>,<span class="string">&#x27;fullscreen=1,top=20,left=0,width=&#x27;</span>+ (screen.<span class="property">width</span>-<span class="number">20</span>) +<span class="string">&#x27;,height=&#x27;</span>+ (screen.<span class="property">height</span>-<span class="number">130</span>))</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/js/websocket/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/js/websocket/" class="post-title-link" itemprop="url">WebSocket</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:16:59 / 修改时间：19:35:51" itemprop="dateCreated datePublished" datetime="2022-07-01T19:16:59+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h1><p>WebSocket 是一种网络通信协议。RFC6455 定义了它的通信标准。<br>WebSocket 是 HTML5 开始提供的一种在单个 TCP 连接上进行全双工通讯的协议。</p>
+<p>HTTP 协议是一种无状态的、无连接的、单向的应用层协议。它采用了请求/响应模型。通信请求只能由客户端发起，服务端对请求做出应答处理。<br>这种通信模型有一个弊端：HTTP 协议无法实现服务器主动向客户端发起消息。</p>
+<p>WebSocket 连接允许客户端和服务器之间进行全双工通信，以便任一方都可以通过建立的连接将数据推送到另一端。WebSocket 只需要建立一次连接，就可以一直保持连接状态。</p>
+<p>Web浏览器和服务器都必须实现 WebSockets 协议来建立和维护连接。由于 WebSockets 连接长期存在，与典型的HTTP连接不同，对服务器有重要的影响。<br>基于多线程或多进程的服务器无法适用于 WebSockets，因为它旨在打开连接，尽可能快地处理请求，然后关闭连接。任何实际的 WebSockets 服务器端实现都需要一个异步服务器。</p>
+<p>var Socket = new WebSocket(url, [protocol] );<br>第一个参数 url, 指定连接的 URL。第二个参数 protocol 是可选的，指定了可接受的子协议。</p>
+<blockquote>
+<p>WebSocket 对象的属性</p>
+</blockquote>
+<table>
+    <thead>
+        <tr>
+            <th>属性</th>
+            <th>描述</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>readyState</td>
+            <td>只读属性 readyState 表示连接状态，可以是以下值：0 - 表示连接尚未建立。1 - 表示连接已建立，可以进行通信。2 - 表示连接正在进行关闭。3 - 表示连接已经关闭或者连接不能打开。</td>
+        </tr>
+        <tr>
+            <td>bufferedAmount</td>
+            <td>只读属性 bufferedAmount 已被 send() 放入正在队列中等待传输，但是还没有发出的 UTF-8 文本字节数。</td>
+        </tr>
+    </tbody>
+</table>
+
+<blockquote>
+<p>WebSocket 对象的相关事件</p>
+</blockquote>
+<table>
+    <thead>
+        <tr>
+            <th>事件</th>
+            <th>事件处理程序</th>
+            <th>描述</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>open</td>
+            <td>Socket.onopen</td>
+            <td>连接建立时触发</td>
+        </tr>
+        <tr>
+            <td>message</td>
+            <td>Socket.onmessage</td>
+            <td>客户端接收服务端数据时触发</td>
+        </tr>
+        <tr>
+            <td>error</td>
+            <td>Socket.onerror</td>
+            <td>通信发生错误时触发</td>
+        </tr>
+        <tr>
+            <td>close</td>
+            <td>Socket.onclose</td>
+            <td>连接关闭时触发</td>
+        </tr>
+    </tbody>
+</table>
+
+<blockquote>
+<p>WebSocket 对象的相关方法</p>
+</blockquote>
+<table>
+    <thead>
+        <tr>
+            <th>方法</th>
+            <th>描述</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Socket.send()</td>
+            <td>使用连接发送数据</td>
+        </tr>
+        <tr>
+            <td>Socket.close()</td>
+            <td>关闭连接</td>
+        </tr>
+    </tbody>
+</table>
+
+<blockquote>
+<p>实例</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 初始化一个 WebSocket 对象</span></span><br><span class="line"><span class="keyword">var</span> ws = <span class="keyword">new</span> <span class="title class_">WebSocket</span>(<span class="string">&quot;ws://localhost:9998/echo&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 建立 web socket 连接成功触发事件</span></span><br><span class="line">ws.<span class="property">onopen</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 使用 send() 方法发送数据</span></span><br><span class="line">    ws.<span class="title function_">send</span>(<span class="string">&quot;发送数据&quot;</span>);</span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&quot;数据发送中...&quot;</span>);</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 接收服务端数据时触发事件 </span></span><br><span class="line">ws.<span class="property">onmessage</span> = <span class="keyword">function</span> (<span class="params">evt</span>) &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">var</span> received_msg = evt.<span class="property">data</span>; <span class="title function_">alert</span>(<span class="string">&quot;数据已接收...&quot;</span>);</span><br><span class="line"></span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 断开 web socket 连接成功触发事件</span></span><br><span class="line">ws.<span class="property">onclose</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="title function_">alert</span>(<span class="string">&quot;连接已关闭...&quot;</span>);</span><br><span class="line"></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/js/string/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/js/string/" class="post-title-link" itemprop="url">String</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:16:06 / 修改时间：19:35:42" itemprop="dateCreated datePublished" datetime="2022-07-01T19:16:06+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="String"><a href="#String" class="headerlink" title="String"></a>String</h1><p>indexOf 无法识别 NaN , undefined</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="title class_">NaN</span>].<span class="title function_">indexOf</span>() == -<span class="number">1</span>; <span class="comment">// true</span></span><br><span class="line">[<span class="literal">undefined</span>].<span class="title function_">indexOf</span>() == -<span class="number">1</span>; <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/js/date/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/js/date/" class="post-title-link" itemprop="url">Date</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:14:24 / 修改时间：19:35:19" itemprop="dateCreated datePublished" datetime="2022-07-01T19:14:24+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h1><p>JS内置对象的坑：</p>
+<p>1、new Date(‘2018-12-12’)的值不等于new Date(2018,12,12)</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018-12-12&#x27;</span>); <span class="comment">// Wed Dec 12 2018 08:00:00 GMT+0800 (中国标准时间)</span></span><br><span class="line">(<span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018-12-12&#x27;</span>)).<span class="title function_">toLocaleDateString</span>(); <span class="comment">// 2018/12/12</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="number">2018</span>,<span class="number">12</span>,<span class="number">12</span>); <span class="comment">// Sat Jan 12 2019 00:00:00 GMT+0800 (中国标准时间)</span></span><br><span class="line">(<span class="keyword">new</span> <span class="title class_">Date</span>(<span class="number">2018</span>,<span class="number">12</span>,<span class="number">12</span>)).<span class="title function_">toLocaleDateString</span>(); <span class="comment">// 2019/1/12</span></span><br></pre></td></tr></table></figure>
+<p>2、不同浏览器对时间的解析不同</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在Chrome浏览器中：</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018-12-12&#x27;</span>); <span class="comment">// Wed Dec 12 2018 08:00:00 GMT+0800 (中国标准时间)</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018/12/12&#x27;</span>); <span class="comment">// Wed Dec 12 2018 00:00:00 GMT+0800 (中国标准时间)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在FireFox浏览器中：</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018-12-12&#x27;</span>); <span class="comment">// Date 2018-12-12T00:00:00.000Z</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018/12/12&#x27;</span>); <span class="comment">// Date 2018-12-11T16:00:00.000Z</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在IE9、IE11浏览器中：</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018-12-12&#x27;</span>); <span class="comment">// Wed Dec 12 2018 08:00:00 GMT+0800 (中国标准时间)</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018/12/12&#x27;</span>); <span class="comment">// Wed Dec 12 2018 00:00:00 GMT+0800 (中国标准时间)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在IE7、IE8浏览器中：</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018-12-12&#x27;</span>); <span class="comment">// NaN</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018/12/12&#x27;</span>); <span class="comment">// Wed Dec 12 2018 00:00:00 GMT+0800 (中国标准时间)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 在QQ浏览器中：</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018-12-12&#x27;</span>); <span class="comment">// Wed Dec 12 2018 08:00:00 GMT+0800 (中国标准时间)</span></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">Date</span>(<span class="string">&#x27;2018/12/12&#x27;</span>); <span class="comment">// Wed Dec 12 2018 00:00:00 GMT+0800 (中国标准时间)</span></span><br></pre></td></tr></table></figure>
+<p>3、<code>new Date(&#39;2018/12/12&#39;)</code> 的值等于 <code>new Date(2018,12,12)</code></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://lidengkedev.github.io/books/2022/07/01/js/calc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/books/images/avatar.gif">
+      <meta itemprop="name" content="登峰人">
+      <meta itemprop="description" content="涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="个人博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/books/2022/07/01/js/calc/" class="post-title-link" itemprop="url">算法</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-07-01 19:13:04 / 修改时间：19:35:11" itemprop="dateCreated datePublished" datetime="2022-07-01T19:13:04+08:00">2022-07-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/books/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><blockquote>
+<p>trie 树结构算法</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 原始数据</span></span><br><span class="line"><span class="keyword">var</span> input = &#123;</span><br><span class="line">  <span class="attr">h3</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;h2&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;副总经理(市场)&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">h1</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;h0&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;公司机构&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">h7</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;h6&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;副总经理(总务)&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">h4</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;h3&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;销售经理&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">h2</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;h1&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;总经理&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">h8</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;h0&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;财务总监&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">h6</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;h4&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;仓管总监&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">h5</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;h4&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;销售代表&#x27;</span> &#125;,</span><br><span class="line">  <span class="attr">h0</span>: &#123; <span class="attr">parent</span>: <span class="string">&#x27;&#x27;</span>, <span class="attr">name</span>: <span class="string">&#x27;root&#x27;</span> &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 算法逻辑</span></span><br><span class="line"><span class="keyword">var</span> trieData (obj) &#123;</span><br><span class="line">    <span class="keyword">var</span> key, res;</span><br><span class="line">    <span class="keyword">for</span> (key <span class="keyword">in</span> obj) &#123;</span><br><span class="line">        <span class="keyword">var</span> parent = obj[key].<span class="property">parent</span>;</span><br><span class="line">        <span class="keyword">if</span> (parent === <span class="string">&#x27;&#x27;</span>) &#123;</span><br><span class="line">            res = obj[key];</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            obj[parent][key] = obj[key];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">trieData</span>(input);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(input)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 运算后的数据</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;&quot;</span>,</span><br><span class="line">    <span class="string">&quot;name&quot;</span>: <span class="string">&quot;root&quot;</span>,</span><br><span class="line">    <span class="string">&quot;h1&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;h0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;公司机构&quot;</span>,</span><br><span class="line">        <span class="string">&quot;h2&quot;</span>: &#123;</span><br><span class="line">            <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;h1&quot;</span>,</span><br><span class="line">            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;总经理&quot;</span>,</span><br><span class="line">            <span class="string">&quot;h3&quot;</span>: &#123;</span><br><span class="line">                <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;h2&quot;</span>,</span><br><span class="line">                <span class="string">&quot;name&quot;</span>: <span class="string">&quot;副总经理(市场)&quot;</span>,</span><br><span class="line">                <span class="string">&quot;h4&quot;</span>: &#123;</span><br><span class="line">                    <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;h3&quot;</span>,</span><br><span class="line">                    <span class="string">&quot;name&quot;</span>: <span class="string">&quot;销售经理&quot;</span>,</span><br><span class="line">                    <span class="string">&quot;h6&quot;</span>: &#123;</span><br><span class="line">                        <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;h4&quot;</span>,</span><br><span class="line">                        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;仓管总监&quot;</span>,</span><br><span class="line">                        <span class="string">&quot;h7&quot;</span>: &#123;</span><br><span class="line">                            <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;h6&quot;</span>,</span><br><span class="line">                            <span class="string">&quot;name&quot;</span>: <span class="string">&quot;副总经理(总务)&quot;</span></span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;,</span><br><span class="line">                    <span class="string">&quot;h5&quot;</span>: &#123;</span><br><span class="line">                        <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;h4&quot;</span>,</span><br><span class="line">                        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;销售代表&quot;</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="string">&quot;h8&quot;</span>: &#123;</span><br><span class="line">        <span class="string">&quot;parent&quot;</span>: <span class="string">&quot;h0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;name&quot;</span>: <span class="string">&quot;财务总监&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/books/page/2/">2</a><a class="page-number" href="/books/page/3/">3</a><a class="extend next" rel="next" href="/books/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">登峰人</p>
+  <div class="site-description" itemprop="description">涉猎的主要编程语言为 JavaScript、HTML、CSS、Vue、React、NodeJs、Nginx、Linux、MySQL、Vite、Webpack、Echarts、Three 等。</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/books/archives/">
+        
+          <span class="site-state-item-count">30</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/books/categories/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/books/tags/">
+          
+        <span class="site-state-item-count">24</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">登峰人</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/books/lib/anime.min.js"></script>
+  <script src="/books/lib/pjax/pjax.min.js"></script>
+  <script src="/books/lib/velocity/velocity.min.js"></script>
+  <script src="/books/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/books/js/utils.js"></script>
+
+<script src="/books/js/motion.js"></script>
+
+
+<script src="/books/js/schemes/pisces.js"></script>
+
+
+<script src="/books/js/next-boot.js"></script>
+
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '.languages',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[data-pjax], script#page-configurations, #pjax script').forEach(element => {
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (element.id) {
+      script.id = element.id;
+    }
+    if (element.className) {
+      script.className = element.className;
+    }
+    if (element.type) {
+      script.type = element.type;
+    }
+    if (element.src) {
+      script.src = element.src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (element.dataset.pjax !== undefined) {
+      script.dataset.pjax = '';
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/books/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="pjax">
+  
+
+  
+
+    </div>
+</body>
+</html>
